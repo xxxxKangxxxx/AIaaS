@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toss 클론</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Apple SD Gothic Neo', sans-serif;
+      background: linear-gradient(#f3f9ff, #dbefff);
+      color: #000;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: #0074ff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      font-size: 15px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+    }
+
+    .lang-toggle {
+      margin-left: 30px;
+    }
+
+    .main-content {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .main-content h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .main-content h2 {
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .store-buttons img {
+      height: 50px;
+      cursor: pointer;
+    }
+
+    .icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    .icons img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">toss</div>
+    <nav>
+      <ul>
+        <li>회사 소개</li>
+        <li>공지사항</li>
+        <li>고객센터</li>
+        <li>자주 묻는 질문</li>
+        <li>토스인증서</li>
+        <li>채용</li>
+        <li class="lang-toggle">KOR | ENG</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="main-content">
+    <h1>금융의 모든 것</h1>
+    <h2>토스에서 쉽고 간편하게</h2>
+
+    <div class="store-buttons">
+      <img src="https://static.toss.im/png-icons/timeline/applekorea.png" alt="App Store">
+      <img src="https://static.toss.im/png-icons/timeline/googleplay.png" alt="Google Play">
+    </div>
+  </section>
+
+</body>
+</html>
