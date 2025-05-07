@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>회사 소개</title>
+        <title>Toss clone 회사 소개</title>
         <link rel="stylesheet" href="about.css">
     </head>
 
@@ -40,5 +40,41 @@
                 <img src="https://static.toss.im/web-general/homepage/static/images/down-arrow.png" alt="scroll down" class="scroll-down-icon" />
             </div>
         </section>
+
+        <section class="stats-section">
+            <div class="stats-text">
+                <h2>
+                    변화를 열망하는 사람들이 모여,<br>
+                     역사에 남을만한 변화를 만듭니다.
+                </h2>
+                <div class="stats-numbers">
+                    <div class="stats">
+                        <p class="label">월간 활성 사용자</p>
+                        <p class="value">2,480만 +</p>
+                    </div>
+                    <div class="stats">
+                        <p class="label">누적 가입자 수</p>
+                        <p class="value">2,800만 +</p>
+                    </div>
+                    <div class="stats">
+                        <p class="label">서비스 수</p>
+                        <p class="value">100개 +</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-graph"></div>
+        </section>
+
+        <script>
+            window.addEventListener('scroll', function () {
+              const header = document.querySelector('header');
+              if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+              } else {
+                header.classList.remove('scrolled');
+              }
+            });
+          </script>
+          
     </body>
 </html>
