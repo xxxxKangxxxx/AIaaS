@@ -522,7 +522,7 @@ html, body {
   .scroll-fade-in {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 1.2s ease-out;
+    transition: opacity 1.5s ease-out;
   }
   
   .scroll-fade-in.show {
@@ -533,7 +533,7 @@ html, body {
   .scroll-fade-up {
     opacity: 0;
     transform: translateY(80px);
-    transition: all 1.0s ease-out;
+    transition: all 1.5s ease-out;
   }
   
   .scroll-fade-up.show {
