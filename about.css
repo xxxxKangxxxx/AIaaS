@@ -1,0 +1,151 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Apple SD Gothic Neo', sans-serif;
+    color: #000;
+    background-color: #fff;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 200px;
+    height: 60px;
+    box-sizing: border-box;
+  }
+  
+  header.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 15px;
+  }
+  
+  nav ul li {
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .lang-toggle {
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  .active-lang {
+    font-weight: 500;
+    color: #000;
+  }
+  
+  .inactive-lang {
+    font-weight: 500;
+    color: #888;
+  }
+  
+  /* 메인 섹션 */
+  .main-content {
+    padding-top: 160px;
+    min-height: 100vh;
+    text-align: center;
+    background-image: url('https://static.toss.im/assets/homepage/team/kv-1.jpg'); /* 원하는 이미지 URL로 변경 가능 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* 이미지가 어두우면 텍스트를 흰색으로 */
+  }
+  
+  .main-content h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 160px;
+  }
+  
+  /* 아래로 스크롤 유도 아이콘 */
+  .scroll-down-icon {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: auto;
+    height: auto;
+    animation: bounce 3s infinite;
+    opacity: 0.6;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(6px);
+    }
+    60% {
+      transform: translateY(4px);
+    }
+  }
+  
+  /* 애니메이션 효과 */
+  .scroll-fade-in {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.5s ease-out;
+  }
+  
+  .scroll-fade-in.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .scroll-fade-up {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1.5s ease-out;
+  }
+  
+  .scroll-fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* 스크롤바 커스터마이징 */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  
