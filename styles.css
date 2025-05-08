@@ -544,6 +544,7 @@ html, body {
   }
   
   .scroll-fade-up {
+    width: 100%;
     opacity: 0;
     transform: translateY(80px);
     transition: all 1.5s ease-out;
