@@ -1,0 +1,410 @@
+/* support.css */
+
+/* ----------------------
+   ✅ 기본 스타일
+------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Apple SD Gothic Neo', sans-serif;
+  background-color: #ffffff;
+  color: #222;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ----------------------
+   ✅ 헤더
+------------------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  height: 60px;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid #eee;
+  background-color: white;
+}  
+
+.logo img {
+  height: 48px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------
+   ✅ Hero 영역
+------------------------*/
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero-icon {
+  margin: 0 auto 32px;
+  width: 80px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.search-box input {
+  width: 100%;
+  max-width: 520px;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  outline: none;
+}
+
+.tag-list {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.tag-list button {
+  background-color: #f2f4f6;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tag-list button:hover {
+  background-color: #e5e7eb;
+}
+
+/* ----------------------
+   ✅ Call 영역
+------------------------*/
+.call-box {
+  background-color: #eef4f3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 280px;
+  align-items: stretch;
+  gap: 60px;
+}
+
+.call-info {
+  flex: 1;
+  min-width: 320px;
+}
+
+.call-info h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: left;
+  color: #2d3748;
+  margin-bottom: 40px;
+}
+
+.call-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 80px;
+  font-size: 16px;
+  color: #4a5568;
+}
+
+.call-columns strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 4px;
+  color: #1a202c;
+}
+
+.call-image-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;  /* 하단 정렬 */
+  justify-content: flex-end;  /* 오른쪽 정렬 유지 */
+  min-width: 320px;
+}
+
+.call-image {
+  align-self: flex-end;
+  margin-top: auto;
+  flex-shrink: 0;
+  width: 360px;
+  min-width: 180px;
+  object-fit: contain;
+}
+
+/* ----------------------
+   ✅ 피해 신고
+------------------------*/
+.report-box {
+  padding: 100px 280px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.report-box h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2d3748;
+  text-align: left;
+}
+
+.report-box p {
+  font-size: 18px;
+  color: #4a5568;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 48px;
+  text-align: left;
+}
+
+.report-buttons {
+  border: none;
+  font-size: 16px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.report-lock-button:hover {
+  background-color: #e4e7ea;
+}
+
+.report-buttons .wide {
+  background-color: #ebeaea;
+  font-weight: 500;
+  border: none;
+  padding: 14px 20px;
+  font-size: 15px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 740px;
+  cursor: pointer;
+}
+
+.report-buttons .wide:hover {
+  background-color: #e4e7ea;
+}
+
+.icon-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+  max-width: 1000px;      /* ✅ 전체 줄 폭 제한 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background-color: #ebeaea;
+  font-weight: 500;
+  border: none;
+  padding: 12px 20px;
+  width: 180px;
+  height: 60px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #2d3748;
+  transition: background 0.2s ease;
+}
+
+.icon-buttons button:hover {
+  background-color: #e4e7ea;
+}
+
+/* ----------------------
+   ✅ 안심보상제
+------------------------*/
+.shield-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 280px;
+  background-color: #f3f5f7;
+  gap: 60px;
+}
+
+.shield-text h2 {
+  font-size: 32px;            /* ✅ 더 큼 */
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  max-width: 280px;
+}
+
+.shield-text p {
+  font-size: 14px;            /* ✅ 조금 더 큼 */
+  color: #4a5568;
+  margin-bottom: 36px;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+.btn-more {
+  display: flex;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2b6cb0;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e0;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  height: 36px;
+  width: 110px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-more:hover {
+  background-color: #edf2f7;
+}
+
+.shield-image {
+  flex-shrink: 0;
+  width: 420px; /* ✅ 이미지 크기 확대 */
+}
+
+  .footer {
+    background-color: #fff;
+    padding: 80px 200px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-company {
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 180px;
+  }
+  
+  .link-column a {
+    color: #6c7682;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .link-column a:hover {
+    color: #000;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 14px;
+  }
+  
+  .footer-icons img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+  
+  .footer-icons img:hover {
+    opacity: 1;
+  }  
+
+  .scroll-fade-in {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.5s ease-out;
+  }
+  
+  .scroll-fade-in.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .scroll-fade-up {
+    width: 100%;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1.5s ease-out;
+  }
+  
+  .scroll-fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #fff;
+  }

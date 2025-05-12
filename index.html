@@ -18,8 +18,8 @@
             <nav>
                 <ul>
                     <li><a href="about.html">회사 소개</a></li>
-                    <li>공지사항</li>
-                    <li>고객센터</li>
+                    <li><a href="news.html">공지사항</a></li>
+                    <li><a href="support.html">고객센터</a></li>
                     <li>자주 묻는 질문</li>
                     <li>토스인증서</li>
                     <li>채용</li>
@@ -161,34 +161,30 @@
             </div>
         </section>
 
-        <script>
-            window.addEventListener('scroll', function () {
-              const header = document.querySelector('header');
-              if (window.scrollY > 10) {
-                header.classList.add('scrolled');
-              } else {
-                header.classList.remove('scrolled');
-              }
-            });
-        </script>
+        <section class="loan-section">
+            <div class="loan-left">
+                <p class="loan-subtitle">대출</p>
+                <h1>
+                    여러 은행의 조건을<br>
+                    1분 만에<br>
+                    <strong>확인해보세요</strong>
+                </h1>
+                <p>앉은 자리에서 한도와 금리를 비교하고<br>나에게 맞는 대출을 찾아보세요.</p>
+            </div>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('show');
-                            observer.unobserve(entry.target); // 한 번만 보여지도록
-                        }
-                    });
-                });
-        
-                // 수정된 클래스 선택자
-                document.querySelectorAll('.scroll-fade-in, .scroll-fade-up').forEach(el => {
-                    observer.observe(el);
-                });
-            });
-        </script>
+            <div class="loan-right">
+                <div class="loan-phone-frame">
+                    <img src="https://static.toss.im/assets/homepage/newtossim/iPhone15_Clay_Shadow_03.png" alt="프레임" class="frame-img">
+                    <div class="screen-slider">
+                        <img src="./assets/screen1.png" class="screen scrollable active" data-type="scroll" />
+                        <img src="./assets/screen2.png" class="screen slide" />
+                        <img src="./assets/screen3.png" class="screen slide" />
+                        <img src="./assets/screen4.png" class="screen slide" />
+                        <img src="./assets/screen5.png" class="screen slide" />
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer class="footer">
             <div class="footer-inner">
@@ -230,5 +226,81 @@
             </div>
             </div>
         </footer>  
+
+        <script>
+            window.addEventListener('scroll', function () {
+              const header = document.querySelector('header');
+              if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+              } else {
+                header.classList.remove('scrolled');
+              }
+            });
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('show');
+                            observer.unobserve(entry.target); // 한 번만 보여지도록
+                        }
+                    });
+                });
+        
+                document.querySelectorAll('.scroll-fade-in, .scroll-fade-up').forEach(el => {
+                    observer.observe(el);
+                });
+            });
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const screens = document.querySelectorAll(".screen-slider .screen");
+                let currentIndex = 0;
+
+                function showNextScreen() {
+                    const current = screens[currentIndex];
+                    const nextIndex = (currentIndex + 1) % screens.length;
+                    const next = screens[nextIndex];
+
+                    screens.forEach(screen => {
+                        screen.classList.remove("active", "scrollable", "exit-left");
+                        screen.style.transform = "";
+                        screen.style.opacity = "";
+                    });
+
+                    if (next.dataset.type === "scroll") {
+                        // 스크롤 애니메이션을 강제로 재적용
+                        next.classList.add("active");
+                        next.classList.remove("scrollable");
+                        void next.offsetWidth;
+                        next.classList.add("scrollable");
+
+                    } else {
+                        next.style.transform = "translateX(100%)";
+                        next.style.opacity = "0";
+                        next.classList.add("active");
+
+                        void next.offsetWidth;
+
+                        next.style.transform = "translateX(0)";
+                        next.style.opacity = "1";
+
+                        current.classList.add("exit-left");
+                    }
+
+                    currentIndex = nextIndex;
+                }
+
+                screens[currentIndex].classList.add("active", "scrollable");
+
+                setInterval(() => {
+                    showNextScreen();
+                }, 3000);
+            });
+
+        </script>
     </body>
 </html>

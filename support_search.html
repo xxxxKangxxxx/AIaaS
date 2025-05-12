@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>고객센터 검색</title>
+        <link rel="stylesheet" href="support_search.css" />
+    </head>
+
+    <body>
+        <!-- 헤더 -->
+         <header class="header">
+            <div class="container">
+                <a href="index.html">
+                    <img src="./assets/Toss_Logo_Primary.png" alt="고객센터 로고" class="logo" />
+                </a>
+                <nav class="nav">
+                    <a href="#">자주 묻는 질문</a>
+                    <a href="#">피해 사건 신고</a>
+                    <a href="#">토스의 보안</a>
+                </nav>
+            </div>
+         </header>
+
+        <!-- 타이틀 + 검색창 -->
+        <section class="search-hero">
+            <h1>자주 묻는 질문</h1>
+                <div class="search-bar-wrapper">
+                    <input
+                        type="text"
+                        class="search-bar"
+                        id="searchInput"
+                        placeholder="무엇이든 찾아보세요"
+                        onfocus="showSearchHistory()"
+                        onkeydown="handleKeydown(event)"
+                    />
+
+                    <div class="search-suggestions" id="suggestionBox" style="display: none;">
+                        <div class="suggestion-header">
+                        <span>최근 검색어</span>
+                        <button onclick="clearSearchHistory()">전체 삭제</button>
+                        </div>
+                        <ul id="suggestionList"></ul>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- 카테고리 + 인기 질문 -->
+        <section class="faq-category">
+            <div class="category-list">
+                <ul>
+                    <li><button class="category-button active">질문 TOP</button></li>
+                    <li><button class="category-button">송금</button></li>
+                    <li><button class="category-button">계좌</button></li>
+                    <li><button class="category-button">카드</button></li>
+                    <li><button class="category-button">토스쇼핑</button></li>
+                    <li><button class="category-button">결제</button></li>
+                    <li><button class="category-button">주식</button></li>
+                    <li><button class="category-button">미성년</button></li>
+                    <li><button class="category-button">이용 문의</button></li>
+                    <li><button class="category-button">안심보상제</button></li>
+                    <li><button class="category-button">대출</button></li>
+                    <li><button class="category-button">토스 프라임</button></li>
+                    <li><button class="category-button">토스 모바일</button></li>
+                    <li><button class="category-button">알림</button></li>
+                    <li><button class="category-button">자료실</button></li>
+                </ul>
+            </div>
+            <div class="faq-top">
+                <ul>
+                    <li><button class="faq-button">🔍 숨은 환급액 찾기 신청을 취소하고 싶어요.</button></li>
+                    <li><button class="faq-button">🔍 토스프라임을 해지하고 싶어요.</button></li>
+                    <li><button class="faq-button">🔍 토스 비밀번호 어떻게 바꾸나요?</button></li>
+                    <li><button class="faq-button">🔍 토스페이 결제 취소 / 환불이 필요해요.</button></li>
+                    <li><button class="faq-button">🔍 송금확인증은 어떻게 발급받나요?</button></li>
+                    <li><button class="faq-button">🔍 비밀번호를 여러번 틀려서 계정이 잠겼는데요. 어떻게 풀 수 있나요?</button></li>
+                    <li><button class="faq-button">🔍 오픈뱅킹 자동이체 문자 받았어요.</button></li>
+                    <li><button class="faq-button">🔍 유스카드 결제 건의 환불이 필요해요.</button></li>
+                    <li><button class="faq-button">🔍 티몬 결제 취소 방법이 궁금해요.</button></li>
+                    <li><button class="faq-button">🔍 위메프 결제 취소하고 싶어요.</button></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 질문 목록 (페이징 포함) -->
+        <section class="faq-list">
+            <div class="pagination">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>›</button>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-company">
+                    <strong>㈜비바리퍼블리카</strong><br>
+                    사업자 등록번호 : 120-88-01280 | 대표 : 이승건<br>
+                    호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 : 2014-서울강남-03377 사업자정보확인<br>
+                    06236 서울특별시 강남구 테헤란로 142, 4층, 10층, 11층, 12층, 13층, 22층, 23층 (역삼동, 아크플레이스)<br>
+                    고객센터 : 서울특별시 강남구 테헤란로 133, 9층 (역삼동, 한국타이어빌딩)
+                </div>
+            
+                <div class="footer-links">
+                    <div class="link-column">
+                        <a href="#">서비스 이용약관</a>
+                        <a href="#">개인정보 처리방침</a>
+                        <a href="#">위치기반서비스 이용약관</a>
+                        <a href="#">금융소비자보호</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="#">통합 금융정보 서비스 약관</a>
+                        <a href="#">채용팀 개인정보 처리방침</a>
+                        <a href="#">가맹점 고지사항</a>
+                        <a href="#">토스비즈니스 개인정보 처리방침</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="#">마이데이터 서비스 이용약관</a>
+                        <a href="#">어드민 서비스 개인정보처리방침</a>
+                        <a href="#">토스 전자인증업무준칙</a>
+                        <a href="#">토스 전자인증서비스 약관</a>
+                    </div>
+                </div>
+            
+                <div class="footer-icons">
+                    <a href="#"><img src="https://static.toss.im/assets/homepage/safety/icn-facebook.svg" alt="Facebook" /></a>
+                    <a href="#"><img src="https://static.toss.im/assets/homepage/safety/icn-blog.svg" alt="Blog" /></a>
+                    <a href="#"><img src="https://static.toss.im/assets/homepage/safety/icn-naver.svg" alt="Naver" /></a>
+                    <a href="#"><img src="https://static.toss.im/assets/homepage/safety/icn-twitter.svg" alt="Twitter" /></a>
+                    <a href="#"><img src="https://static.toss.im/assets/homepage/safety/icn-instagram.svg" alt="Instagram" /></a>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            window.addEventListener('scroll', function () {
+              const header = document.querySelector('header');
+              if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+              } else {
+                header.classList.remove('scrolled');
+              }
+            });
+        </script>
+
+        <script>
+        const STORAGE_KEY = 'searchHistory';
+
+        // 검색어 저장
+        function saveSearch(keyword) {
+            if (!keyword.trim()) return;
+            let history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+
+            // 중복 제거하고 최신 순으로 저장
+            history = history.filter(item => item !== keyword);
+            history.unshift(keyword);
+
+            // 최대 5개만 유지
+            if (history.length > 5) history = history.slice(0, 5);
+
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
+        }
+
+        // 검색 실행 시 호출되는 함수
+        function handleKeydown(event) {
+            if (event.key === 'Enter') {
+            const keyword = document.getElementById('searchInput').value;
+            saveSearch(keyword);
+            hideSuggestions();
+            // 실제 검색 처리 로직은 여기에 추가
+            }
+        }
+
+        // 저장된 검색어 보여주기
+        function showSearchHistory() {
+            const suggestionBox = document.getElementById('suggestionBox');
+            const suggestionList = document.getElementById('suggestionList');
+            suggestionList.innerHTML = '';
+
+            const history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+
+            history.forEach(keyword => {
+            const li = document.createElement('li');
+            li.textContent = keyword;
+            li.onclick = () => {
+                document.getElementById('searchInput').value = keyword;
+                suggestionBox.style.display = 'none';
+            };
+            suggestionList.appendChild(li);
+            });
+
+            suggestionBox.style.display = history.length ? 'block' : 'none';
+        }
+
+        function hideSuggestions() {
+            document.getElementById('suggestionBox').style.display = 'none';
+        }
+
+        function clearSearchHistory() {
+            localStorage.removeItem('searchHistory');
+            document.getElementById('suggestionBox').style.display = 'none';
+        }
+
+        // 바깥 클릭 시 숨기기
+        document.addEventListener('click', function (e) {
+            const wrapper = document.querySelector('.search-bar-wrapper');
+            if (!wrapper.contains(e.target)) hideSuggestions();
+        });
+        </script>
+    </body>
+</html>
