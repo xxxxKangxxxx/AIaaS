@@ -9,4 +9,9 @@
 - [styles.css](./styles.css): 페이지의 스타일과 애니메이션 효과를 담당하는 CSS 파일
 - [about.html](./about.html): 회사 소개 페이지를 담당하는 HTML 파일
 - [about.css](./about.css): 회사 소개 페이지의 스타일과 애니메이션 효과를 담당하는 CSS 파일
-
+- [news.html](./news.html): 공지사항 페이지 
+- [news.css](./news.css): 공지사항 페이지 CSS 파일
+- [support.html](./support.html): 고객센터 페이지
+- [support.css](./support.css): 고객센터 페이지 CSS 파일
+- [supoprt_search.html]
+- [support.css]
