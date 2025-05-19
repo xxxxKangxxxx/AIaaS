@@ -1,0 +1,56 @@
+/* SupportFooter.module.css */
+
+.footer {
+  background-color: #f7f8f9;
+  padding: 60px 24px;
+  font-size: 14px;
+  color: #555;
+}
+
+.footerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerCompany {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.linkColumn a {
+  color: #6c7682;
+  text-decoration: none;
+}
+
+.linkColumn a:hover {
+  color: #000;
+}
+
+.footerIcons {
+  display: flex;
+  gap: 14px;
+}
+
+.footerIcons img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.footerIcons img:hover {
+  opacity: 1;
+}

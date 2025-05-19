@@ -1,0 +1,37 @@
+/* Pagination.module.css */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.page {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #fff;
+  color: #0f1114;
+  font-weight: 700;
+}
+
+.arrow {
+  color: #bbb;
+  font-weight: 500;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.ellipsis {
+  color: #888;
+  padding: 6px;
+}

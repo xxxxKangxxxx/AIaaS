@@ -1,0 +1,42 @@
+/* AboutMain.module.css */
+
+.mainContent {
+  padding-top: 160px;
+  min-height: 100vh;
+  text-align: center;
+  background-image: url('https://static.toss.im/assets/homepage/team/kv-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.mainContent h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: 160px;
+}
+
+.scrollIndicater .scrollDownIcon {
+  margin: 0 auto;
+  margin-top: 120px;
+  width: auto;
+  height: auto;
+  animation: bounce 3s infinite;
+  opacity: 0.6;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(6px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+}

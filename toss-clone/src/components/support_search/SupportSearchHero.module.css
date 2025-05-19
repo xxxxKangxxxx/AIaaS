@@ -1,0 +1,89 @@
+/* SupportSearchHero.module.css */
+
+.searchHero {
+  max-width: 1200px;
+  margin: 60px auto 40px;
+  padding: 0 24px;
+}
+
+.searchHero h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.searchBarWrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.searchBar {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e0;
+  background-color: #f9fafb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  color: #2d3748;
+}
+
+.searchBar:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.4);
+}
+
+.searchSuggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  z-index: 50;
+}
+
+.suggestionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #666;
+}
+
+.suggestionHeader button {
+  background: none;
+  border: none;
+  color: #3182ce;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.suggestionHeader button:hover {
+  text-decoration: underline;
+}
+
+.suggestionList {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.suggestionItem {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #2d3748;
+}
+
+.suggestionItem:hover {
+  background-color: #f3f4f6;
+}

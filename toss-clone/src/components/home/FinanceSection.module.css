@@ -1,0 +1,35 @@
+.financeSection {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://static.toss.im/assets/homepage/newtossim/section2_4_big.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* 애니메이션 초기 상태 */
+  clip-path: inset(0 30% 0 30%);
+  transition: clip-path 1.5s ease-out;
+}
+
+/* 스크롤 등장 시 커튼 걷히는 효과 */
+.revealed {
+  clip-path: inset(0 0% 0 0%);
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.financeTitle {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}

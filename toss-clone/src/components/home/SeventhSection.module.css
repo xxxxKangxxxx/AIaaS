@@ -1,0 +1,54 @@
+/* SeventhSection.module.css */
+
+.seventhSet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 100px 80px;
+  margin: 0 auto;
+}
+
+.seventhLeft {
+  flex: 1;
+  max-width: 600px;
+  margin-left: 210px;
+}
+
+.seventhSubtitle {
+  color: #1b64da;
+  font-size: 20px;
+  font-weight: 450;
+  margin-bottom: -20px;
+}
+
+.seventhLeft h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #373535;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.seventhText {
+  font-size: 22px;
+  font-weight: 500;
+  color: #909090;
+  line-height: 1.6;
+}
+
+.seventhRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-right: 150px;
+}
+
+.checkTime {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+}

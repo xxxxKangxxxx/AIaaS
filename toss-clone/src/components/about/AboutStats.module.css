@@ -1,0 +1,67 @@
+/* AboutStats.module.css */
+
+.statsSection {
+  position: relative;
+  background-color: #0f1114;
+  color: white;
+  padding: 80px 160px;
+  overflow: hidden;
+}
+
+.statsText {
+  z-index: 2;
+  position: relative;
+  text-align: left;
+}
+
+.statsText h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 100px;
+}
+
+.statsNumbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  max-width: 860px;
+  padding-left: 40px;
+}
+
+.stats {
+  text-align: left;
+  flex: 1 1 280px;
+  min-width: 200px;
+}
+
+.label {
+  font-size: 20px;
+  color: #aaa;
+}
+
+.value {
+  font-size: 72px;
+  font-weight: 700;
+  margin-top: -10px;
+}
+
+.statsGraph {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: url('https://static.toss.im/assets/homepage/newtossim/section1_1_01.png') no-repeat bottom center;
+  background-size: cover;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    flex: 1 1 100%;
+  }
+}

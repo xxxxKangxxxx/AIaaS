@@ -1,0 +1,105 @@
+/* InvestmentSection.module.css */
+
+.investmentSection {
+  background-color: #ffffff;
+  padding: 100px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.headingArea {
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+  padding: 0 180px;
+}
+
+.label {
+  color: #3182ce;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: -20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a202c;
+  line-height: 1.4;
+}
+
+.contentWrapper {
+  max-width: 1200px;
+  margin-top: -80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* .leftDesc,
+.rightDesc,
+.sideTextGroup {
+  flex: 1;
+  margin-top: 200px;
+  min-width: 200px;
+  max-width: 260px;
+} */
+
+/* .desc {
+  font-size: 18px;
+  color: #4a5568;
+  line-height: 1.8;
+} */
+
+.leftdesc {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 480px;
+}
+
+.rightdesc {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 320px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 360px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frameImage {
+  width: 680px;
+  height: auto;
+  z-index: 2;
+  display: block;
+  border-radius: 40px;
+}
+
+.screenImage {
+  position: absolute;
+  top: 9%;
+  left: -4%;
+  width: 110%;
+  border-radius: 28px;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.bottomText {
+  margin-top: -40px;
+  margin-bottom: 80px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2d3748;
+  text-align: center;
+}

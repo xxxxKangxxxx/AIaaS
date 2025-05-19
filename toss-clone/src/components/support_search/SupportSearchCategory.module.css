@@ -1,0 +1,75 @@
+/* SupportSearchCategory.module.css */
+
+.categoryContainer {
+  display: flex;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 24px;
+  gap: 40px;
+  align-items: flex-start; /* ✅ 추가: 세로 정렬 고정 */
+}
+
+.categoryList {
+  width: 280px;
+  margin-left: 60px;
+}
+
+.categoryList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categoryButton {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #718096;
+  padding: 12px 0;
+  cursor: pointer;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+
+.categoryButton:hover {
+  color: #2c5282;
+}
+
+.active {
+  color: #3182ce;
+  font-weight: 500;
+}
+
+/* ✅ 수정 포인트 */
+.faqTop {
+  flex: 1;
+  display: flex;             /* ✅ 추가: 내부 버튼 세로 정렬 */
+  flex-direction: column;
+  gap: 18px;                 /* ✅ faqButton 간격 */
+}
+
+.faqTop ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faqButton {
+  display: flex;             /* ✅ 수정: 아이콘 + 텍스트 나란히 */
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+  color: #818489;
+}
+
+.faqButton:hover {
+  background-color: #e2e8f0;
+}

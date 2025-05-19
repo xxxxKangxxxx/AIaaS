@@ -1,0 +1,33 @@
+/* SupportSearchList.module.css */
+
+.faqList {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pageButton {
+  padding: 8px 14px;
+  border: none;
+  background-color: #edf2f7;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #1a202c;
+  transition: background 0.2s;
+}
+
+.pageButton:hover {
+  background-color: #e2e8f0;
+}
+
+.active {
+  background-color: #3182ce;
+  color: #fff;
+}

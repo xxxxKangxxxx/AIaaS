@@ -1,0 +1,55 @@
+/* SixthSection.module.css */
+
+.sixthSet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-left: 40px;
+  margin-top: 150px;
+}
+
+.sixthRight {
+  flex: 1;
+  max-width: 600px;
+  margin-right: 160px;
+  padding-left: 40px;
+}
+
+.sixthSubtitle {
+  color: #1b64da;
+  font-size: 20px;
+  font-weight: 450;
+  margin-bottom: -20px;
+}
+
+.sixthRight h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #373535;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.sixthText {
+  font-size: 22px;
+  font-weight: 500;
+  color: #909090;
+  line-height: 1.6;
+}
+
+.sixthImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.sendScam {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+}

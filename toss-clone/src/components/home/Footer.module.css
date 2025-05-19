@@ -1,0 +1,50 @@
+/* Footer.module.css */
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 60px 80px;
+  font-size: 14px;
+  color: #333;
+}
+
+.footerInner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footerCompany {
+  line-height: 1.7;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 180px;
+}
+
+.linkColumn a {
+  color: #333;
+  text-decoration: none;
+}
+
+.linkColumn a:hover {
+  text-decoration: underline;
+}
+
+.footerIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.footerIcons img {
+  width: 24px;
+  height: 24px;
+}

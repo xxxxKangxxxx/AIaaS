@@ -1,0 +1,74 @@
+/* CreditScoreSection.module.css */
+
+.creditSection {
+  background-color: #f9fafb;
+  padding: 100px 180px;
+}
+
+.creditTop {
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.creditTop.fadeUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.subtitle {
+  color: #1b64da;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #222;
+}
+
+.creditFeatures {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.creditFeatures.fadeUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.featureBox {
+  flex: 1;
+  min-width: 320px;
+  max-width: 600px;
+}
+
+.icon {
+  width: 120px;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 20px;
+}
+
+.featureBox h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.featureBox p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #555;
+}

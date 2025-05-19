@@ -1,0 +1,62 @@
+/* SupportCallBox.module.css */
+
+.callBox {
+  background-color: #eef4f3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 280px;
+  align-items: stretch;
+  gap: 60px;
+}
+
+.callInfo {
+  flex: 1;
+  min-width: 320px;
+}
+
+.callInfo h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: left;
+  color: #2d3748;
+  margin-bottom: 40px;
+}
+
+.callColumns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 80px;
+  font-size: 16px;
+  color: #4a5568;
+}
+
+.callColumns strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 4px;
+  color: #1a202c;
+}
+
+.callImageWrapper {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  min-width: 320px;
+}
+
+.callImageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.callImage {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  object-fit: contain;
+}

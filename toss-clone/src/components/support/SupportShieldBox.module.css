@@ -1,0 +1,65 @@
+.shieldBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 280px;
+  background-color: #f3f5f7;
+  gap: 40px;
+}
+
+.shieldText {
+  flex: 1;
+  min-width: 280px;
+}
+
+.shieldText h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  max-width: 280px;
+}
+
+.shieldText p {
+  font-size: 18px;
+  color: #4a5568;
+  margin-bottom: 36px;
+  line-height: 1.7;
+  max-width: 380px;
+}
+
+.btnMore {
+  display: flex;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a5568;
+  background-color: #f3f5f7;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  height: 10px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnMore:hover {
+  background-color: #53575e19;
+}
+
+.shieldImageWrapper {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shieldImage {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+}

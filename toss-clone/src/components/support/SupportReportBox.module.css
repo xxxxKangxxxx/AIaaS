@@ -1,0 +1,86 @@
+/* SupportReportBox.module.css */
+
+.reportBox {
+  padding: 100px 280px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.reportBox h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2d3748;
+  text-align: left;
+}
+
+.reportBox p {
+  font-size: 18px;
+  color: #4a5568;
+  line-height: 1.7;
+  max-width: 1000px;
+  margin: 0 auto 48px;
+  text-align: left;
+}
+
+.reportButtons {
+  border: none;
+  font-size: 18px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reportLockButton:hover {
+  background-color: #e4e7ea;
+}
+
+.wide {
+  background-color: #ebeaea;
+  font-weight: 500;
+  border: none;
+  padding: 14px 20px;
+  font-size: 15px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 740px;
+  cursor: pointer;
+}
+
+.wide:hover {
+  background-color: #e4e7ea;
+}
+
+.iconButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iconButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background-color: #ebeaea;
+  font-weight: 500;
+  border: none;
+  padding: 12px 20px;
+  width: 180px;
+  height: 60px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #2d3748;
+  transition: background 0.2s ease;
+}
+
+.iconButton:hover {
+  background-color: #e4e7ea;
+}

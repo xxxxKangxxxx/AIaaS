@@ -1,0 +1,46 @@
+/* SupportSearchHeader.module.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 180px;
+  height: 60px;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid #eee;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 52px;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
